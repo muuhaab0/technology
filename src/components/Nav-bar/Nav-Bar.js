@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Logo from "../../assets/Logo.png"
 import "./Nav-Bar.css"
-import SearchIcon from "@mui/icons-material/Search"
 import MenuIcon from "@mui/icons-material/Menu"
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown"
 import CloseIcon from "@mui/icons-material/Close"
@@ -10,11 +9,10 @@ import services from "../../helpers/serviceData"
 
 
 export default function NavBar() {
-    console.log(services)
     const [iseOpen, setIsOpen] = useState(false)
 
-      const [show, setShow] = useState(true);
-      const [lastScrollY, setLastScrollY] = useState(0);
+    //   const [show, setShow] = useState(true);
+    //   const [lastScrollY, setLastScrollY] = useState(0);
     
     
     //   useEffect(() => {
@@ -53,7 +51,7 @@ export default function NavBar() {
             <div className='navBarPadding flex'>
 
         <ul  className='links flex a-center gap-half'>
-            <li className='flex a-center' onClick={(e)=> setIsOpen(!iseOpen)}> <div> <ArrowDropDownIcon /> </div> <a>Services</a></li>
+            <li className='flex a-center' style={{cursor:"pointer"}} onClick={()=> setIsOpen(!iseOpen)}> <div> <ArrowDropDownIcon /> </div> <p>Services</p></li>
             <li>
             <NavLink to="/product">
             Products
@@ -85,10 +83,10 @@ export default function NavBar() {
 
             <div className='buttonsLinks flex gap-half'>
             <Link to="/contact">
-            <a href="#">Contact</a>
+            Contact
             </Link>
             <Link to="/about">
-            <a href="#">About us</a>
+            About us
             </Link>
             </div>
             
@@ -147,7 +145,7 @@ export default function NavBar() {
                             </Link>
                             </h2>
                             <Link onClick={()=>setIsOpen(false)}  to="/product">
-                                <a>Our Products</a>
+                                Our Products
                             </Link>
                             </div>
 
@@ -175,8 +173,8 @@ export default function NavBar() {
                         Data Security
                         </Link>
                         </h2>
-                        <Link onClick={()=>setIsOpen(false)} to="/data-security">Data Security System</Link>
-                        <a></a>
+                        <Link onClick={()=>setIsOpen(false)} to="/dataSecurity">Data Security System</Link>
+                        
                     </div>
                 </div>
             </div>

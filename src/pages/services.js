@@ -10,7 +10,6 @@ export default function Services(props) {
     window.scrollTo(0, 0)
   }, [])
     const location = useLocation();
-    const path = location.pathname
 
   return (
     <div>

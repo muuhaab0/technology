@@ -5,7 +5,6 @@ export default function ServicesDetails(prop) {
     const path = prop.prop.pathname
     const newpath = path.split("/" ,-2)
     const title = newpath[2]
-console.log(prop)
   return (
     <div className='ServiceDetail'>
         <h2 className='serviceDetailTitle'>{title}</h2>

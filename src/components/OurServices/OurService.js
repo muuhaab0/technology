@@ -1,14 +1,9 @@
-import React, { useState } from 'react'
 import "./OurServices.css"
-import {Link , useNavigate} from "react-router-dom"
+import {Link } from "react-router-dom"
 import services from "../../helpers/serviceData"
 
 export default function OurService() {
-    const navigate = useNavigate()
 
-    const [dataBox, setDataBox] = useState(false)
-
-    
    
 
   return (
@@ -18,10 +13,9 @@ export default function OurService() {
         <div className='serviceBoxes flex a-center j-center'>
 
                {services.map((e)=> {
-                    let icon = e.icon
                return(
 
-            <div className='serviceBox'>
+            <div className='serviceBox' key={e.name}>
                 <div className='serviceIcon'>
                   <e.icon style={{fontSize:"60px",color:e.iconColor}}/>
                 </div>

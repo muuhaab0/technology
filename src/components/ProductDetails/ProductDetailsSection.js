@@ -4,14 +4,11 @@ import "./ProductDetailsSection.css"
 
 export default function ProductDetailsSection(prop) {
   const { state } = useLocation();
-    // const path = prop.prop.pathname
-    // console.log(prop.prop)
-    console.log(state.prod)
   return (
     <div className='productDetailsContainer'>
         <div className='productImgContainer'>
           <div className='productImgContainerText'>
-          <h6>We Are Sealling</h6>
+          <h6>We Are Offering</h6>
           <p>{state.prod.name}</p>
           </div>
         </div>

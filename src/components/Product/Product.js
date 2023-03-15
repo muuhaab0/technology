@@ -1,12 +1,6 @@
 import React from 'react'
 import "./Product.css"
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-import laptop from "../../assets/laptop2.jpeg"
-import computer from "../../assets/computer.jpg"
-import screen from "../../assets/screen.png"
-import accessories from "../../assets/accessories.jpeg"
-import server from "../../assets/server.jpeg"
-import tablet from "../../assets/tablet.jpeg"
 import productData from '../../helpers/productData';
 import { Link } from 'react-router-dom';
 
@@ -21,7 +15,7 @@ export default function Product() {
         productData.map((prod)=>{ 
             return(
         
-        <div className='productBox'>
+        <div className='productBox' key={prod.name}>
             <Link
              to={`/product/${prod.link}`}
                 state={{prod}}

@@ -34,15 +34,14 @@ import CallIcon from '@mui/icons-material/Call';
             <input name='Company' type="Text" placeholder='Contact number' required />
             <select name="Which service are you interested in?">
             <option value="first">IT Recycling&Dipolal</option>
-            <option value="second" selected>Reverse Logistics</option>
+            <option value="DEFAULT">Reverse Logistics</option>
             <option value="third">Data Destruction</option>
-            <option value="third">Buying</option>
-            <option value="third">Sealling</option>
+            <option value="four">Buying</option>
+            <option value="five">Sealling</option>
             </select>
 
-            <textarea  name="Message" rows="4" cols="50">
+            <textarea defaultValue="Hello Egy-Technology." name="Message" rows="4" cols="50" />
                 Message
-            </textarea>
             <input type="submit" />
 
         </div>
@@ -61,11 +60,11 @@ import CallIcon from '@mui/icons-material/Call';
             <input name='Mail' type="email" placeholder='Enter Ur Mail' required />
             <input name='Contact' type="Text" placeholder='Contact number' required />
             <select name="Which service are you interested in?">
-            <option value="first">IT Recycling&Dipolal</option>
-            <option value="second" selected>Reverse Logistics</option>
-            <option value="third">Data Destruction</option>
-            <option value="third">Buying</option>
-            <option value="third">Sealling</option>
+            <option value="DEFAULT" >IT Recycling&Dipolal</option>
+            <option value="second">Reverse Logistics</option>
+            <option value="one">Data Destruction</option>
+            <option value="two">Buying</option>
+            <option value="three">Sealling</option>
             </select>
             <input type="submit" />
 

@@ -40,7 +40,7 @@ import StorefrontIcon from '@mui/icons-material/Storefront';
             SPECIALISTS
             </h3>
             <br/>
-            Our staff are vetted to BS:7858 and are specialist in computer equipment disposal, we perform full testing of the equipment and promote re-use. Re-use is from PC disposals is significantly better for the environment. Legislation is leaning towards encouraging re-use rather than re-cycle but as the first focus of Concept Management is data security it is a trade-off between ensuring data is securely sanitised and making processing of the asset financial viable for re-use. With the disposal of computer equipment, Concept Management encourages best commercial practise in functionality testing, repair and re-engineers but also consider commercial viability of these practices.
+            Our staff are vetted to BS:7858 and are specialist in computer equipment disposal, we perform full testing of the equipment and promote re-use. Re-use is from PC disposals is significantly better for the environment. Legislation is leaning towards encouraging re-use rather than re-cycle but as the first focus of Egy-Technology Management is data security it is a trade-off between ensuring data is securely sanitised and making processing of the asset financial viable for re-use. With the disposal of computer equipment, Egy-Technology Management encourages best commercial practise in functionality testing, repair and re-engineers but also consider commercial viability of these practices.
             <br/>
             <br/>
 

@@ -9,7 +9,6 @@ import { Link } from 'react-router-dom';
 import services from "../../helpers/serviceData"
 
 export default function Footer({prop}) {
-    console.log(services)
   return (
     <div className='footerContainer'>
     {
@@ -23,14 +22,14 @@ export default function Footer({prop}) {
                 <h4>HEAD OFFICE</h4>
                 <p className='footerAdress'>40-46 Ashton Old Rd, Manchester M12 6LP,<br/>
                  United kingdom</p>
-                <p className='phoneNumber'>
+                <div className='phoneNumber'>
                 <p>
                 P: 016 15377 966
                 </p>
                 <p>
                 E: info@egytechnology.co.uk
                 </p>
-                </p>
+                </div>
             </div>
 
             <div className='footerLinks'>
@@ -51,7 +50,9 @@ export default function Footer({prop}) {
                 </Link></p>
                 <p><Link to="/solutions">
                 Solutions</Link></p>
+                <Link to="/product">
                 <p>Our Products</p>
+                </Link>
             </div>
             </div>
 

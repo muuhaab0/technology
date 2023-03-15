@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import "./WhatWeDo.css"
 import MinimizeIcon from '@mui/icons-material/Minimize';
 import AddIcon from '@mui/icons-material/Add';
@@ -8,20 +8,16 @@ import Bussnies from "../../assets/Small-Business-IT-Support-Services-e158136892
 export default function WhatWeDo() {
 
 
-    const [isOpen, setIsOpen] = useState(0);
-    const [Opened, setOpened] = useState(1);
+
+    const [isOpen, setIsOpen] = useState(1);
     const [Current, setCurrent] = useState(1);
     
     const Faq = (i) => {
         if (Current === i) {
             setIsOpen(current => !current)
-            setOpened(Current => !Current)
+            Current(Current => !Current)
         } }
 
-        useEffect(() => {
-
-        }, [])
-        
 
 
   return (
@@ -37,9 +33,8 @@ export default function WhatWeDo() {
 
 {
         faq.map((fq,i) =>  {
-            console.log(i)
             return(
-        <div className='faq'>
+        <div className='faq'  key={i}>
 
                 <div className='content flex j-between a-center gap-half' onClick={ () =>{
                 Faq(i);
