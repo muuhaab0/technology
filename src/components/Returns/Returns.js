@@ -1,8 +1,5 @@
 import React from 'react'
 import "./Returns.css"
-import returns from "../../assets/timely-1.png"
-import service from "../../assets/specialised-1.jpg"
-import transparency from "../../assets/team-1.png"
 import Groups2Icon from "@mui/icons-material/Groups2"
 import DashboardCustomizeIcon from "@mui/icons-material/DashboardCustomize"
 import SwitchAccessShortcutAddIcon from "@mui/icons-material/SwitchAccessShortcutAdd"
