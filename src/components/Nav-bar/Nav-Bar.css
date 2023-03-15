@@ -1,0 +1,196 @@
+
+
+.NavBarContainer {
+    /* margin-top: -20px; */
+    overflow: hidden;
+    z-index: 5555;
+    position: relative;
+    color: var(---navbar-color);
+    height: 170px;
+}
+
+.NavBarContainerFlex {
+    /*position: relative;
+    /* position: fixed; */
+    position: fixed;
+    width: 100%;
+    height: 170px;
+    top: 0;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.hidden {
+    top:-200px;;
+}
+
+.LogoContainer {
+    background-color: white;
+    width: 20%;
+    padding: 0 90px;
+    height: 170px;
+    margin: auto;
+    z-index: 55;
+}
+
+.navBarPadding .links {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navBarPadding .links li {
+    padding: 2px;
+}
+
+.navBarPadding .links li:hover { 
+    background-color: var(---section-color);
+}
+
+.ContainerPadding {
+    width: 74%;
+    justify-content: space-between;
+}
+.navBarPadding {
+    background-color: white;
+    width: 80%;
+    padding: 0 130px;
+    justify-content: end;
+}
+
+
+
+
+.LogoPic {
+    width: 150px;
+    margin-top: 7px;
+}
+
+
+.Buttons {
+    position: absolute;
+    top: 45px;
+    right: 80px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.Buttons a {
+    padding: 5px;
+}
+
+.Buttons a:hover {
+    background-color: var(---section-color);
+}
+
+
+.NavBarPopUp {
+    position: fixed;
+    z-index: 5555555;
+    background: var(---primary-color);
+    transition: 0.9s;
+    width: 100%;
+    color: white;
+    height: 80vh;
+    top: -720px;
+    -webkit-transition: 0.9s;
+    -moz-transition: 0.9s;
+    -ms-transition: 0.9s;
+    -o-transition: 0.9s;
+}
+.NavBarPopUp a {
+    padding: 5px;
+}
+.NavBarPopUp a:hover {
+    background-color: var(---section-color);
+}
+
+.top {
+    top: 10.5rem!important;
+}
+
+
+
+.navBarBoxDown ,.navBarBoxUp  {
+    margin-top: 20px;
+
+}
+
+.navBarBoxDown h2,.navBarBoxUp h2 {
+    margin-bottom: 20px;
+
+}
+
+.navBarBoxDown {
+    margin-right: 20px;
+}
+
+@media (max-width:1100px) {
+  .navBarPadding .links {
+        display: none;
+    }
+
+    .Buttons {
+        top: 75px!important;
+    }
+    .NavBarIcon svg {
+        font-size: 30px;
+    }
+    .navBarBoxDown, .navBarBoxUp {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:700px) {
+    .NavBarPopUp a:not(h2 a) {
+        display: none;
+    }
+    .navBarPopBoxesUp {
+        margin-top: 30px;
+    }
+
+    .navBarPopBoxesUp , .navBarPopBoxesDown {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navBarBoxDown,.navBarBoxUp   {
+        margin: 15px!important;
+    }
+    .navBarBoxLinks {
+        display: none;
+    }     
+}
+
+
+@media (max-width:650px) {
+    .LogoContainer img {
+        width: 120px;
+    }
+
+    .NavBarContainer {
+        height: 135px;
+    }
+    .NavBarContainerFlex  {
+        height: 135px;
+    }
+
+    .LogoContainer {
+        height: 135px;
+    }
+    .buttonsLinks {
+        display: none!important;
+    }
+    
+    .Buttons  {
+        top:55px!important;
+    }
+
+    .top {
+        top: 8.4rem!important;
+    }
+}
